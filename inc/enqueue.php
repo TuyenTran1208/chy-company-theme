@@ -1,6 +1,6 @@
 <?php
 /**
- * Enqueue theme styles and scripts.
+ * Enqueue theme assets.
  *
  * @package Chy_Company_Theme
  */
@@ -10,11 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Enqueue frontend assets.
+ * Load CSS and JavaScript.
  *
  * @return void
  */
 function chy_company_theme_enqueue_assets() {
+
 	wp_enqueue_style(
 		'chy-company-theme-style',
 		get_template_directory_uri() . '/assets/css/theme.css',
@@ -30,4 +31,8 @@ function chy_company_theme_enqueue_assets() {
 		true
 	);
 }
-add_action( 'wp_enqueue_scripts', 'chy_company_theme_enqueue_assets' );
+
+add_action(
+	'wp_enqueue_scripts',
+	'chy_company_theme_enqueue_assets'
+);

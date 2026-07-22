@@ -14,6 +14,79 @@ $published_datetime = get_the_date( 'c' );
 $author_name        = get_the_author();
 ?>
 
+<section class="author-box">
+
+	<h2>
+		<?php esc_html_e( 'About the Author', 'chy-company-theme' ); ?>
+	</h2>
+
+	<div class="author-avatar">
+		<?php echo get_avatar( get_the_author_meta( 'ID' ), 96 ); ?>
+	</div>
+
+	<div class="author-info">
+
+		<h3>
+			<?php the_author(); ?>
+		</h3>
+
+		<p>
+			<?php the_author_meta( 'description' ); ?>
+		</p>
+
+	</div>
+
+</section>
+
+<?php
+
+$related_posts = new WP_Query(
+	array(
+		'posts_per_page'      => 3,
+		'post__not_in'        => array( get_the_ID() ),
+		'ignore_sticky_posts' => true,
+		'category__in'        => wp_get_post_categories( get_the_ID() ),
+	)
+);
+
+if ( $related_posts->have_posts() ) :
+?>
+
+<section class="related-posts">
+
+	<h2>
+		<?php esc_html_e( 'Related Posts', 'chy-company-theme' ); ?>
+	</h2>
+
+	<ul>
+
+		<?php
+		while ( $related_posts->have_posts() ) :
+			$related_posts->the_post();
+		?>
+
+			<li>
+
+				<a href="<?php the_permalink(); ?>">
+
+					<?php the_title(); ?>
+
+				</a>
+
+			</li>
+
+		<?php endwhile; ?>
+
+	</ul>
+
+</section>
+
+<?php
+endif;
+
+wp_reset_postdata();
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">

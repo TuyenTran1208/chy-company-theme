@@ -1,0 +1,103 @@
+/**
+ * ==========================================================================
+ * Responsive
+ * ==========================================================================
+ */
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .site-header .container{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding-top:1rem;
+
+        padding-bottom:1rem;
+
+    }
+
+    .main-navigation ul{
+
+        flex-wrap:wrap;
+
+        gap:1rem;
+
+    }
+
+    .site-main{
+
+        padding:2rem 1rem;
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.75rem;
+
+    }
+
+    h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .search-form{
+
+        flex-direction:column;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+    }
+
+    article{
+
+        padding:1.5rem;
+
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    .site-title{
+
+        font-size:1.5rem;
+
+    }
+
+    .site-description{
+
+        font-size:.875rem;
+
+    }
+
+    .page-numbers{
+
+        padding:.5rem .75rem;
+
+    }
+
+}

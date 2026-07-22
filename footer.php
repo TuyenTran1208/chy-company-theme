@@ -11,17 +11,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <footer id="colophon" class="site-footer">
-	<div class="site-info">
-		<p>
-			<?php
-			printf(
-				esc_html__( '© %1$s %2$s', 'chy-company-theme' ),
-				esc_html( wp_date( 'Y' ) ),
-				esc_html( get_bloginfo( 'name' ) )
-			);
-			?>
-		</p>
+
+	<div class="container">
+
+		<div class="site-info">
+			<p>
+				<?php
+				printf(
+					esc_html__( '© %1$s %2$s', 'chy-company-theme' ),
+					esc_html( wp_date( 'Y' ) ),
+					esc_html( get_bloginfo( 'name' ) )
+				);
+				?>
+			</p>
+		</div>
+
 	</div>
+
 </footer>
 
 <?php wp_footer(); ?>

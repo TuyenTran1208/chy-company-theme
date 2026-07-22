@@ -13,6 +13,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
+	<?php chy_company_theme_breadcrumb(); ?>
 	<header class="page-header">
 		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 

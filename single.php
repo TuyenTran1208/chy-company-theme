@@ -12,38 +12,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="primary" class="site-main">
+<div class="site-content">
 
-	<?php chy_company_theme_breadcrumb(); ?>
+	<main id="primary" class="site-main">
 
-	<?php
-	while ( have_posts() ) :
-		the_post();
+		<?php chy_company_theme_breadcrumb(); ?>
 
-		get_template_part( 'template-parts/content', 'single' );
+		<?php
+		while ( have_posts() ) :
+			the_post();
 
-		the_post_navigation(
-			array(
-				'prev_text' => sprintf(
-					'<span class="nav-subtitle">%s</span><span class="nav-title">%%title</span>',
-					esc_html__( 'Previous:', 'chy-company-theme' )
-				),
-				'next_text' => sprintf(
-					'<span class="nav-subtitle">%s</span><span class="nav-title">%%title</span>',
-					esc_html__( 'Next:', 'chy-company-theme' )
-				),
-			)
-		);
+			get_template_part( 'template-parts/content', 'single' );
 
-		if ( comments_open() || get_comments_number() ) {
-			comments_template();
-		}
+			if ( comments_open() || get_comments_number() ) {
+				comments_template();
+			}
 
-	endwhile;
-	?>
+		endwhile;
+		?>
 
-</main>
+	</main>
 
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

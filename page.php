@@ -12,17 +12,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="primary" class="site-main">
-	<?php chy_company_theme_breadcrumb(); ?>
-	<?php
-	while ( have_posts() ) :
-		the_post();
+<div class="site-content">
 
-		get_template_part( 'template-parts/content', 'page' );
-	endwhile;
-	?>
-</main>
+	<main id="primary" class="site-main">
 
-<?php get_sidebar(); ?>
+		<?php chy_company_theme_breadcrumb(); ?>
+
+		<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+
+		endwhile;
+		?>
+
+	</main>
+
+	<?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

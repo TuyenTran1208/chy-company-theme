@@ -15,7 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container">
 
 		<div class="site-info">
+
 			<p>
+
 				<?php
 				printf(
 					esc_html__( '© %1$s %2$s', 'chy-company-theme' ),
@@ -23,7 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 					esc_html( get_bloginfo( 'name' ) )
 				);
 				?>
+
 			</p>
+
 		</div>
 
 	</div>
@@ -31,5 +35,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 </footer>
 
 <?php wp_footer(); ?>
+
 </body>
 </html>

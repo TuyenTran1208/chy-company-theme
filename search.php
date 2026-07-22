@@ -33,7 +33,13 @@ get_header();
 			get_template_part( 'template-parts/content' );
 		endwhile;
 
-		the_posts_navigation();
+		the_posts_pagination(
+			array(
+				'mid_size'  => 2,
+				'prev_text' => esc_html__( 'Previous', 'chy-company-theme' ),
+				'next_text' => esc_html__( 'Next', 'chy-company-theme' ),
+			)
+		);
 		?>
 	<?php else : ?>
 		<?php get_template_part( 'template-parts/content', 'none' ); ?>

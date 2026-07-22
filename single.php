@@ -22,6 +22,19 @@ get_header();
 
 		get_template_part( 'template-parts/content', 'single' );
 
+		the_post_navigation(
+			array(
+				'prev_text' => sprintf(
+					'<span class="nav-subtitle">%s</span><span class="nav-title">%%title</span>',
+					esc_html__( 'Previous:', 'chy-company-theme' )
+				),
+				'next_text' => sprintf(
+					'<span class="nav-subtitle">%s</span><span class="nav-title">%%title</span>',
+					esc_html__( 'Next:', 'chy-company-theme' )
+				),
+			)
+		);
+
 		if ( comments_open() || get_comments_number() ) {
 			comments_template();
 		}

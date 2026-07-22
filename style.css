@@ -1,0 +1,16 @@
+/*
+Theme Name: CHY Company Theme
+Theme URI: https://github.com/TuyenTran1208/chy-company-theme
+Author: Tuyen Tran
+Author URI: https://github.com/TuyenTran1208
+Description: Custom WordPress theme for CHY Company.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 8.1
+Text Domain: chy-company-theme
+*/
+
+body{
+    margin:0;
+}

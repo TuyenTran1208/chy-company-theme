@@ -13,18 +13,22 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
+
 	<?php chy_company_theme_breadcrumb(); ?>
+
 	<?php
 	while ( have_posts() ) :
 		the_post();
 
-		get_template_part( 'template-parts/content' );
+		get_template_part( 'template-parts/content', 'single' );
 
 		if ( comments_open() || get_comments_number() ) {
 			comments_template();
 		}
+
 	endwhile;
 	?>
+
 </main>
 
 <?php get_sidebar(); ?>

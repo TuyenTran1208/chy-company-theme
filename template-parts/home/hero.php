@@ -19,6 +19,10 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 	<div class="container">
 		<div class="home-hero__layout">
 			<div class="home-hero__content">
+				<span class="home-hero__badge">
+					<?php esc_html_e( 'Giải Pháp Doanh Nghiệp', 'chy-company-theme' ); ?>
+				</span>
+
 				<h1 id="<?php echo esc_attr( $hero_heading_id ); ?>" class="home-hero__title">
 					<?php echo esc_html( $site_name ); ?>
 				</h1>
@@ -48,4 +52,5 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 		</div>
 	</div>
 </section>
+
 

@@ -101,3 +101,43 @@
     }
 
 }
+
+/* Home Hero */
+
+@media (max-width:992px){
+
+    .home-hero{
+
+        padding:var(--space-6) 0;
+
+    }
+
+    .home-hero__layout{
+
+        grid-template-columns:1fr;
+
+        gap:var(--space-6);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home-hero__actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .home-hero__button,
+    .home-hero__banner{
+
+        width:100%;
+
+    }
+
+}
+

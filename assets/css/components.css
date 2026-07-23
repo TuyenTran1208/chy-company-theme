@@ -529,25 +529,44 @@ article{
 
 }
 
-.home-hero__trust {
+.home-hero__trust-badges {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:var(--space-3);
+
+    margin-bottom:var(--space-6);
+
+}
+
+.home-hero__trust-badge {
 
     display:inline-flex;
 
     align-items:center;
 
-    gap:var(--space-2);
+    gap:6px;
 
-    margin-bottom:var(--space-6);
+    padding:6px 14px;
 
-    font-size:var(--font-size-xs);
+    border:1px solid var(--color-border);
 
-    font-weight:600;
+    border-radius:999px;
+
+    background:var(--color-surface);
 
     color:var(--color-text);
 
-    opacity:0.85;
+    font-size:0.8125rem;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow-sm);
 
 }
+
 
 .home-hero__stats {
 

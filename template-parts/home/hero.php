@@ -51,9 +51,9 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp phần mềm, 
 				</div>
 
 				<div class="home-hero__trust-badges">
-					<span class="home-hero__trust-badge">✓ <?php esc_html_e( 'Bảo mật doanh nghiệp', 'chy-company-theme' ); ?></span>
-					<span class="home-hero__trust-badge">✓ <?php esc_html_e( 'Hỗ trợ 24/7/365', 'chy-company-theme' ); ?></span>
-					<span class="home-hero__trust-badge">✓ <?php esc_html_e( 'ISO 27001 Ready', 'chy-company-theme' ); ?></span>
+					<span class="home-hero__trust-badge"><span class="home-hero__trust-icon">✓</span> <?php esc_html_e( 'Bảo mật doanh nghiệp', 'chy-company-theme' ); ?></span>
+					<span class="home-hero__trust-badge"><span class="home-hero__trust-icon">✓</span> <?php esc_html_e( 'Hỗ trợ 24/7/365', 'chy-company-theme' ); ?></span>
+					<span class="home-hero__trust-badge"><span class="home-hero__trust-icon">✓</span> <?php esc_html_e( 'ISO 27001 Ready', 'chy-company-theme' ); ?></span>
 				</div>
 
 

@@ -37,7 +37,7 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 
 				<div class="home-hero__actions">
 					<a class="home-hero__button" href="<?php echo esc_url( '#' ); ?>">
-						<?php esc_html_e( 'Liên hệ', 'chy-company-theme' ); ?>
+						<?php esc_html_e( 'Liên hệ →', 'chy-company-theme' ); ?>
 					</a>
 
 					<a class="home-hero__button home-hero__button--secondary" href="<?php echo esc_url( '#' ); ?>">
@@ -46,7 +46,7 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 				</div>
 
 				<p class="home-hero__trust">
-					✓ <?php esc_html_e( 'Giải pháp CNTT dành cho doanh nghiệp', 'chy-company-theme' ); ?>
+					✓ <?php esc_html_e( 'Giải pháp CNTT hàng đầu cho doanh nghiệp', 'chy-company-theme' ); ?>
 				</p>
 
 				<div class="home-hero__stats">
@@ -60,12 +60,12 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 					</div>
 					<div class="home-hero__stat-card">
 						<span class="home-hero__stat-number">24/7</span>
-						<span class="home-hero__stat-label"><?php esc_html_e( 'Hỗ trợ', 'chy-company-theme' ); ?></span>
+						<span class="home-hero__stat-label"><?php esc_html_e( 'Hỗ trợ kỹ thuật', 'chy-company-theme' ); ?></span>
 					</div>
 				</div>
 			</div>
 
-			<div class="home-hero__banner" role="img" aria-label="<?php echo esc_attr__( 'Company Image placeholder', 'chy-company-theme' ); ?>">
+			<div class="home-hero__banner" role="img" aria-label="<?php echo esc_attr__( 'Giao diện phần mềm giải pháp doanh nghiệp', 'chy-company-theme' ); ?>">
 				<div class="home-hero__banner-window">
 					<div class="home-hero__banner-header">
 						<span class="home-hero__banner-dot"></span>
@@ -73,15 +73,25 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 						<span class="home-hero__banner-dot"></span>
 					</div>
 					<div class="home-hero__banner-body">
-						<span class="home-hero__banner-label"><?php esc_html_e( 'Company Image', 'chy-company-theme' ); ?></span>
-						<div class="home-hero__banner-line"></div>
-						<div class="home-hero__banner-line home-hero__banner-line--short"></div>
+						<div class="home-hero__banner-sidebar">
+							<div class="home-hero__banner-navitem"></div>
+							<div class="home-hero__banner-navitem"></div>
+							<div class="home-hero__banner-navitem"></div>
+						</div>
+						<div class="home-hero__banner-main">
+							<span class="home-hero__banner-label"><?php esc_html_e( 'Enterprise Platform', 'chy-company-theme' ); ?></span>
+							<div class="home-hero__banner-card">
+								<div class="home-hero__banner-line"></div>
+								<div class="home-hero__banner-line home-hero__banner-line--short"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 
 

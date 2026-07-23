@@ -50,15 +50,15 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 				</p>
 
 				<div class="home-hero__stats">
-					<div class="home-hero__stat">
+					<div class="home-hero__stat-card">
 						<span class="home-hero__stat-number">10+</span>
 						<span class="home-hero__stat-label"><?php esc_html_e( 'Năm kinh nghiệm', 'chy-company-theme' ); ?></span>
 					</div>
-					<div class="home-hero__stat">
+					<div class="home-hero__stat-card">
 						<span class="home-hero__stat-number">300+</span>
 						<span class="home-hero__stat-label"><?php esc_html_e( 'Khách hàng', 'chy-company-theme' ); ?></span>
 					</div>
-					<div class="home-hero__stat">
+					<div class="home-hero__stat-card">
 						<span class="home-hero__stat-number">24/7</span>
 						<span class="home-hero__stat-label"><?php esc_html_e( 'Hỗ trợ', 'chy-company-theme' ); ?></span>
 					</div>
@@ -66,11 +66,23 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 			</div>
 
 			<div class="home-hero__banner" role="img" aria-label="<?php echo esc_attr__( 'Company Image placeholder', 'chy-company-theme' ); ?>">
-				<span><?php esc_html_e( 'Company Image', 'chy-company-theme' ); ?></span>
+				<div class="home-hero__banner-window">
+					<div class="home-hero__banner-header">
+						<span class="home-hero__banner-dot"></span>
+						<span class="home-hero__banner-dot"></span>
+						<span class="home-hero__banner-dot"></span>
+					</div>
+					<div class="home-hero__banner-body">
+						<span class="home-hero__banner-label"><?php esc_html_e( 'Company Image', 'chy-company-theme' ); ?></span>
+						<div class="home-hero__banner-line"></div>
+						<div class="home-hero__banner-line home-hero__banner-line--short"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 
 

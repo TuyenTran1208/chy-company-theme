@@ -44,6 +44,25 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 						<?php esc_html_e( 'Dịch vụ', 'chy-company-theme' ); ?>
 					</a>
 				</div>
+
+				<p class="home-hero__trust">
+					✓ <?php esc_html_e( 'Giải pháp CNTT dành cho doanh nghiệp', 'chy-company-theme' ); ?>
+				</p>
+
+				<div class="home-hero__stats">
+					<div class="home-hero__stat">
+						<span class="home-hero__stat-number">10+</span>
+						<span class="home-hero__stat-label"><?php esc_html_e( 'Năm kinh nghiệm', 'chy-company-theme' ); ?></span>
+					</div>
+					<div class="home-hero__stat">
+						<span class="home-hero__stat-number">300+</span>
+						<span class="home-hero__stat-label"><?php esc_html_e( 'Khách hàng', 'chy-company-theme' ); ?></span>
+					</div>
+					<div class="home-hero__stat">
+						<span class="home-hero__stat-number">24/7</span>
+						<span class="home-hero__stat-label"><?php esc_html_e( 'Hỗ trợ', 'chy-company-theme' ); ?></span>
+					</div>
+				</div>
 			</div>
 
 			<div class="home-hero__banner" role="img" aria-label="<?php echo esc_attr__( 'Company Image placeholder', 'chy-company-theme' ); ?>">
@@ -52,5 +71,6 @@ $hero_intro       = __( 'Chúng tôi cung cấp các giải pháp chuyên nghi�
 		</div>
 	</div>
 </section>
+
 
 
